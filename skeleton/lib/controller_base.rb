@@ -10,6 +10,7 @@ class ControllerBase
   def initialize(req, res)
     @req = Rack::Request.new
     @res = Rack::Response.new
+    @already_built_response = false
   end
 
   # Helper method to alias @already_built_response
